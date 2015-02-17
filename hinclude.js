@@ -202,6 +202,10 @@ var hinclude;
                 }
             }
         },
+        
+        refreshElement: function(element) {
+            this.includeElement(element, this.set_content_buffered);
+        },
 
         get_meta: function (name, value_default) {
             var m = 0;
